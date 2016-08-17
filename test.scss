@@ -1,0 +1,91 @@
+$nav: nav2 ;
+$nav: nav1 !default;
+$div: div1;
+body{
+	margin: 20px;
+	a{
+		color: #eef;
+		&:hover{
+			background-color: #fff;
+		}
+	}
+	margin:{
+		top: 10px;
+		bottom: 10px;
+	}
+	##{$nav}{   
+		border-right: 0;
+	}
+
+}
+##{$nav}{
+	background: #000;
+}
+@mixin hong($bgc, $top:0, $bot:0){
+	position: absolute;
+	border: 12px;
+	background-color: $bgc;
+	top: $top;
+	bottom: $bot;
+}
+##{$div}{
+	@include hong(#ddd, 0, 0);
+	bottom: 0;
+}
+
+.a{
+	width: 10px;
+	background-color: #fff;
+}
+%placeholder{
+	height: 20px;
+}
+@mixin hong($btm){
+	bottom: $btm;
+}
+
+@import "base";
+@import "untitled";
+.b{
+	@include hong(12px);  //混合宏
+	@extend .a;			  //继承
+	@extend %placeholder; //占位符
+	top: 100px;
+}
+
+@function add($i){
+	@return $i+10;
+}
+
+.b{
+	border: add(30px);
+}
+
+@import "arrow";
+.arrow{
+	@include arroww(10px, black, "right");
+}
+
+@import "error";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

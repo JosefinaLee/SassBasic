@@ -1,0 +1,18 @@
+@mixin arroww($width, $color, $direction){
+	width: 0;
+	height: 0;
+	border: $width solid transparent;
+	@if $direction == "left"{
+		border-right-color: $color;
+	}
+	@else if $direction == "right"{
+		border-left-color: $color;
+		}
+	@else if $direction == "up"{
+		border-bottom-color: $color;
+	}
+	@else if $direction == "down"{
+		border-top-color: $color;
+	}
+
+}

@@ -1,0 +1,6 @@
+$err: err right warn;
+@each $i in $err{
+	.icon-#{$i}{
+		background: url(#{$i}.jpg);
+	}
+}

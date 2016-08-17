@@ -1,0 +1,58 @@
+body {
+  margin: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  body a {
+    color: #eef; }
+    body a:hover {
+      background-color: #fff; }
+  body #nav2 {
+    border-right: 0; }
+
+#nav2 {
+  background: #000; }
+
+#div1 {
+  position: absolute;
+  border: 12px;
+  background-color: #ddd;
+  top: 0;
+  bottom: 0;
+  bottom: 0; }
+
+.a, .b {
+  width: 10px;
+  background-color: #fff; }
+
+.b {
+  height: 20px; }
+
+.b {
+  left: 10px; }
+
+.b {
+  padding-left: 10px; }
+
+.b {
+  bottom: 12px;
+  top: 100px; }
+
+.b {
+  border: 40px; }
+
+.arrow {
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-left-color: black; }
+
+.icon-err {
+  background: url(err.jpg); }
+
+.icon-right {
+  background: url(right.jpg); }
+
+.icon-warn {
+  background: url(warn.jpg); }
+
+/*# sourceMappingURL=target.css.map */
